@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adicionar Espécie</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<nav>
+    <img src="../img/logo.png">
+    <a href="../index.html">Início</a>
+    <input type="search">
+    <a href="cadastro.html">Adicionar Espécie</a>
+    <a href=""></a>
+</nav>
+
+<main class="form-area">
+
+    <form id="speciesForm" class="form-card">
+
+        <h2>Cadastrar Espécie</h2>
+
+        <input type="text" placeholder="Nome da espécie" id="nome" required>
+
+        <input type="text" placeholder="Nome científico" id="nomeCientifico" required>
+
+        <input type="text" placeholder="Tipo (Árvore, Planta, etc)" id="tipo" required>
+
+        <input type="text" placeholder="Porte (Pequeno, Médio, Grande)" id="porte" required>
+
+        <input type="text" placeholder="URL da imagem" id="imagem" required>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</main>
+
+<script src="../js/addSpecies.js"></script>
+
+</body>
+</html>

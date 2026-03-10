@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:rgb(94,143,94);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    min-height:70px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+nav img{
+    width:140px;
+}
+
+nav a{
+    font-size:18px;
+    font-weight:bold;
+    color:rgb(31,66,31);
+    padding:6px 10px;
+}
+
+nav input{
+    flex:1;
+    min-width:180px;
+    max-width:350px;
+    height:35px;
+    padding:0 10px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* GRID DOS CARDS */
+
+.grid{
+    width:90%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
+    justify-items:center;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+    transition:0.2s;
+    width:100%;
+    max-width:320px;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:scale(1.04);
+}
+
+.card-img-container{
+    width:100%;
+    height:200px;
+    overflow:hidden;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.card-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.card h3{
+    color:#2f7d32;
+    margin-bottom:6px;
+    font-size:18px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.3;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width:600px){
+
+    nav{
+        justify-content:center;
+        text-align:center;
+    }
+
+    nav input{
+        width:100%;
+        max-width:none;
+    }
+
+    nav img{
+        width:120px;
+    }
+
+    .grid{
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    }
+
+    .card{
+        max-width:260px;
+    }
+
+    .card-img-container{
+        height:160px;
+    }
+
+}
+
+/* FORMULÁRIO */
+
+.form-area{
+    width:100%;
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    width:90%;
+    max-width:400px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-card h2{
+    text-align:center;
+    color:#2f7d32;
+}
+
+.form-card input{
+    height:40px;
+    padding:0 10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.form-card button{
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#2f7d32;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.form-card button:hover{
+    background:#256628;
+}
