@@ -32,6 +32,7 @@ nav a{
     font-weight:bold;
     color:rgb(31,66,31);
     padding:6px 10px;
+    text-align:center;
 }
 
 nav input{
@@ -40,6 +41,15 @@ nav input{
     max-width:350px;
     height:35px;
     padding:0 10px;
+    border:2px solid #2f7d32;   /* borda verde escura */
+    border-radius:8px;           /* cantos arredondados */
+    outline:none;                /* remove contorno padrão */
+    transition:0.2s;             /* animação suave */
+}
+
+nav input:focus{
+    border-color:#4CAF50;        /* muda a borda ao focar */
+    box-shadow: 0 0 5px #4CAF50; /* leve brilho verde */
 }
 
 a{
@@ -130,7 +140,6 @@ a{
     .card-img-container{
         height:160px;
     }
-
 }
 
 /* FORMULÁRIO */
